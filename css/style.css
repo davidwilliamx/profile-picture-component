@@ -31,29 +31,29 @@ body {
     z-index: 999;
 }
 .card {
-    width: 350px;
-    border-radius: 10px;
+    width: 19.444444444444443rem; /*350*/
+    border-radius: 0.5555555555555556rem;
     background-color: var(--white);
     text-align: center;
-    margin: 0 25px;
+    margin: 0 1.3888888888888888rem;
 }
 .card .bg-avatar {
     width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 0.5555555555555556rem;
+    border-top-right-radius: 0.5555555555555556rem;
 }
 .card .avatar {
     border-radius: 50%;
-    margin-top: -49px;
-    margin-bottom: 20px;
-    border: 5px solid var(--white);
+    margin-top: -2.7222222222222223rem;
+    margin-bottom: 1.1111111111111112rem;
+    border: 0.2777777777777778rem solid var(--white);
 }
 
 .card h1 {
     font-size: 1rem;
     font-weight: 700;
     color: var(--very-dark-desaturated-blue);
-    margin-bottom: 10px;
+    margin-bottom: 0.5555555555555556rem;
 }
 .card h1 .age {
     font-size: 1rem;
@@ -64,29 +64,29 @@ body {
     font-size: 0.7777777777777778rem;
     font-weight: 400;
     color: var(--dark-grayish-blue);
-    margin-bottom: 50px;
+    margin-bottom: 2.7777777777777777rem;
 }
 
 .card ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-bottom: 24px;
+    margin-bottom: 1.3333333333333333rem;
 }
 .card ul li p:nth-child(1) {
     font-size: 1rem;
     font-weight: 700;
     color: var(--very-dark-desaturated-blue);
-    margin-bottom: 5px;
+    margin-bottom: 0.2777777777777778rem;
 }
 .card ul li p:nth-child(2) {
-    font-size: 12px;
+    font-size: 0.6666666666666666rem;
     font-weight: 400;
     color: var(--dark-grayish-blue);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 20.833333333333332rem) {
     .card {
-        width: 326px;
+        width: 18.11111111111111rem;
     }
 }
