@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --white: hsl(0, 0%, 100%);
+    --main-font: 'Kumbh Sans', sans-serif;
+}
+
+html {
+    font-size: 18px;
+    font-family: var(--main-font);
+}
+
+body {
+    background-color: var(--dark-cyan);
+    background-image: 
+        url(../images/bg-pattern-top.svg),
+        url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 45vw bottom 40vh, left 45vw top 50vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    z-index: 999;
+}
+.card {
+    width: 350px;
+    border-radius: 10px;
+    background-color: var(--white);
+    text-align: center;
+    margin: 0 25px;
+}
+.card .bg-avatar {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card .avatar {
+    border-radius: 50%;
+    margin-top: -49px;
+    margin-bottom: 20px;
+    border: 5px solid var(--white);
+}
+
+.card h1 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
+    margin-bottom: 10px;
+}
+.card h1 .age {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--dark-grayish-blue);
+}
+.card > p {
+    font-size: 0.7777777777777778rem;
+    font-weight: 400;
+    color: var(--dark-grayish-blue);
+    margin-bottom: 50px;
+}
+
+.card ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 24px;
+}
+.card ul li p:nth-child(1) {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
+    margin-bottom: 5px;
+}
+.card ul li p:nth-child(2) {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--dark-grayish-blue);
+}
+
+@media (max-width: 375px) {
+    .card {
+        width: 326px;
+    }
+}
